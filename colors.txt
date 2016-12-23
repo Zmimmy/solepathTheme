@@ -1,0 +1,13 @@
+Solepath Colors:
+
+purple: #37074d links
+
+lighter purple: #5C588A
+
+blue: #BED8FF
+
+green: #A7B30A - hover links
+
+winter:#FAFAFB
+
+red: #B81A1A
