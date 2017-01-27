@@ -7,7 +7,7 @@
 		"uuidString": "007772B8-0D6C-443F-A205-79838B4DDD6B"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/build": {
 		"ft": 65536,
@@ -837,6 +837,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -1376,6 +1380,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,

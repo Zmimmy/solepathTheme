@@ -20,6 +20,7 @@ Contents:
 6. Breadcrumbs
 7. Content footer navigation
 8. Footer
+9. Misc Stuff
 
 1. Color Variables for the theme
 ----------------------------------------------------
@@ -292,6 +293,13 @@ body.blog .post-inner-content,
 	padding-bottom: 150px;
 }
 
+/*
+9: Misc Stuff
+-----------------------------------------------------
+*/
+body.loading {
+    overflow: auto;
+}
 
 /*
 99: Test Stuff not for the live site
