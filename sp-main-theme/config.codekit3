@@ -15,15 +15,6 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
-	"\/rainbow_smoke_bg.jpg": {
-		"ft": 16384,
-		"iS": 16384,
-		"oA": 0,
-		"oAP": "\/build\/rainbow_smoke_bg.jpg",
-		"oF": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"\/source\/_rounder-corners.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -189,6 +180,15 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/source\/js\/main-sp-script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/js\/main-sp-script.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/source\/screenshot.png": {
 		"ft": 32768,
 		"iS": 362880,
@@ -225,7 +225,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 502914925,
-	"displayValue": "sparkling-child",
+	"displayValue": "sp-main-theme",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-daenerys",
 	"lastBuiltDate": 503521407

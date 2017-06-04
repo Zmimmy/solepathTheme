@@ -20,3 +20,11 @@ add_filter( 'auth_cookie_expiration', 'keep_me_logged_in' );
 function keep_me_logged_in( $expirein ) {
     return 15552000; // 1 year: 31556926 - 6 mths: 15552000
 }
+
+
+function add_theme_scripts() {
+ 
+  wp_enqueue_script( 'main-sp-script', get_template_directory_uri() . '/js/main-sp-script.js', array ( 'jquery' ), 1.1, true);
+ 
+}
+add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
