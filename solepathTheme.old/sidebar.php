@@ -12,7 +12,6 @@
     <!-- begin widget sidebar -->
     <div class="button button-sidebar tall-button" onClick="window.location.href='http://solepathinstitute.org/request-your-solepath-energy-analysis/solepath-energy-analysis-for-people/';" style="cursor:pointer;">Order Your SolePath</div>
     <div class="button button-sidebar daily-divination" onClick="window.location.href='http://solepathinstitute.org/contact-us/';" style="cursor:pointer;">Book an Appointment</div>
-    <div class="button button-sidebar weddings" onClick="window.location.href='http://solepathinstitute.org/solepath-weddings/';" style="cursor:pointer;">SolePath Weddings & Ceremonies</div>
     <div class="button button-sidebar-smaller w-and-r" onClick="window.location.href='http://solepathinstitute.org/contact-us/workshops-and-retreats/';" style="cursor:pointer;">Classes, Workshops & Discussion Groups</div>
 <div style="clear: both;"></div>
     <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Main Sidebar') ) : ?>
