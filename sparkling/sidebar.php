@@ -24,7 +24,7 @@
 				
 				<?php else : ?>
 					<div class="logged-out-content">
-						<a href="http://membership-staging.solepathinstitute.org/login/" title="Login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+						<a href="https://membership.solepathinstitute.org/login/" title="Login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 					</div>
 				
 				<?php endif; ?>

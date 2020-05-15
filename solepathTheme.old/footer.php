@@ -24,9 +24,9 @@
 		  <div style="clear: both"></div>
 		  	<div class="footer-menu">
             <p>SolePath is the way to find answers to the fundamental and everyday questions of your life.</p>
-            <a href="http://solepathinstitute.org/contact-us/">Contact Us</a>
-            | <a href="http://solepathinstitute.org/solepath-terms-and-conditions/">Terms & Conditions</a>
-            | <a href="http://solepathinstitute.org/solepath-privacy-protection-policy/">Privacy</a>
+            <a href="https://solepathinstitute.org/contact-us/">Contact Us</a>
+            | <a href="https://solepathinstitute.org/solepath-terms-and-conditions/">Terms & Conditions</a>
+            | <a href="https://solepathinstitute.org/solepath-privacy-protection-policy/">Privacy</a>
             <br />
             <p>We are located in Inglewood, Calgary, Alberta, Canada | 1.877.866.2086 | <a href="mailto:frontdesk@solepath.org">frontdesk@solepath.org</a>
             </div><br />

@@ -103,7 +103,7 @@ src="https://www.facebook.com/tr?id=761448114023580&ev=PageView
 	<div class="social-container">
 	   <div class="social-base">
 		 <div class="social-ribbon-link">
-		   <a href="http://solepathinstitute.org/solepath-community-meetups-join-us/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-meetup-small.png" height="25px" width="25px"></a>
+		   <a href="https://solepathinstitute.org/solepath-community-meetups-join-us/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-meetup-small.png" height="25px" width="25px"></a>
 		   <a href="https://www.etsy.com/ca/shop/SolePantry" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-etsy-small.png" height="25px" width="25px"></a>
 		   <a href="https://issuu.com/solepath" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-issuu-small.png" height="25px" width="25px"></a>
 		   <a href="https://medium.com/@SolePathAnswers" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-medium-small.png" height="25px" width="25px"></a>
@@ -118,7 +118,7 @@ src="https://www.facebook.com/tr?id=761448114023580&ev=PageView
 	<div class="inset"></div>
 	
 	<div class="container">
-    <div class="base"><div class="ribbon-link"><a href="http://solepathinstitute.org/solepantry/">shop at the SolePantry<br>click here</a></div></div>
+    <div class="base"><div class="ribbon-link"><a href="https://solepathinstitute.org/solepantry/">shop at the SolePantry<br>click here</a></div></div>
 		<div class="left_corner"></div>
 		<div class="right_corner"></div>
 	</div>

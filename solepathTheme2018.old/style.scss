@@ -1,0 +1,820 @@
+/*
+Theme Name: SolePath Theme 2018
+Template: sparkling
+Author: Colorlib and Eric Pattison
+Author URI: http://colorlib.com/
+Description: Adapted sparkling theme for SolePath home page
+Version: 1.0
+Updated: June 27, 2018
+
+*/
+/*
+Contents:
+--------
+1. SCSS color variables
+2. Imports
+3. Navbar and body colors
+4: Navbar fonts and sized
+5. Sidebar styling
+6. Breadcrumbs
+7. Content footer navigation
+8. Footer
+9. Misc Stuff
+
+1. Color Variables for the theme
+----------------------------------------------------
+
+green #29797e
+purple #644870
+red #87123c
+blue #285f73
+
+white: #ECEEEA
+black: #2B2D2E
+
+
+*/
+
+// Colors
+$green: #29797E;
+$purple: #644870;
+$red: #87123C;
+$blue: #285F73;
+$white: #ECEEEA;
+$black: #2B2D2E;
+
+// Default colors
+body {
+    background-color: $white;
+    color: $black;
+
+    .btn.btn-default, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, a.more-link {
+        color: $white;
+        background-color: $blue;
+        border-color: $blue;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+    }
+    .btn.btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .woocommerce #respond input#submit:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, a.more-link:hover {
+        background-color: $green;
+        border-color: $green;
+        color: $white;
+    }
+}
+
+#infinite-handle span, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title,
+.dropdown-menu, #secondary .widget, #secondary .widget > h3 {
+    color: $black;
+}
+
+body a,
+#secondary .widget .post-content a,
+#secondary .widget a {
+    color: $purple;
+    &:hover {
+        color: $blue;
+    }
+}
+
+// Navbar colors
+#masthead {
+    position: relative;
+    border-bottom: 2px solid $green;
+    .navbar-default {
+        background-color: $blue;
+        color: $white;
+        min-height: 40px;
+        .site-navigation-inner {
+            #menu-header-menu {
+                li {
+                    padding: 0 16px;
+                    color: $white;
+
+                    &:hover,
+                    &:focus {
+                        background-color: $green;
+                        color: $white;
+                    }
+
+                    li {
+                        &:hover,
+                        &:focus {
+                            background-color: $green;
+                            $color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar-nav {
+            > .active {
+                > a {
+                    color: $white;
+                    background-color: transparent;
+                }
+            }
+
+            .current-menu-item {
+                background-color: $green;
+            }
+
+            .dropdown-menu {
+                > li {
+                    > a {
+                        line-height: 40px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #logo {
+        max-width: 150px;
+        margin-top: 32px;
+        z-index: 3;
+        position: relative;
+
+        a {
+            display: block;
+        }
+    }
+}
+
+
+.navbar-default .navbar-nav > .active > .caret,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: $white;
+    background-color: transparent;
+}
+
+/*
+10: Social Icons
+-----------------------------------------------------
+*/
+#menu-social {
+    li {
+        a[href*="etsy.com"] {
+            .fa:before {
+                content: "\f2d7";
+            }
+        }
+        a[href*="medium.com"] {
+            .fa:before {
+                content: "\f23a";
+            }
+        }
+        a[href*="meetups-join"] {
+            .fa:before {
+                content: "\f2e0";
+            }
+        }
+    }
+}
+
+$bandwidth: 8px;
+
+#footer-area {
+    background-color: $blue;
+    color: $white;
+
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
+
+    #colophon {
+        background-color: $blue;
+        color: $white;
+        border-top: none;
+    }
+
+    .footer-rainbow {
+        position: absolute;
+        top: ($bandwidth * -5);
+        left: ($bandwidth * -6);
+        width: 100%;
+        height: 89%;
+        border-bottom-right-radius: 3px;
+        box-shadow:
+                0 0 0 ($bandwidth * 1) $black,
+                0 0 0 ($bandwidth * 2) $red,
+                0 0 0 ($bandwidth * 3) $purple,
+                0 0 0 ($bandwidth * 4) $blue,
+                0 0 0 ($bandwidth * 5) $white,
+                0 0 0 ($bandwidth * 6) $green;
+    }
+
+    .footer-area-inner-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        overflow: hidden;
+    }
+}
+
+/*
+11: Solepath Rainbow
+-----------------------------------------------------
+*/
+
+
+
+#solepath-rainbow {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    .color-band {
+        width: $bandwidth;
+        display: inline-block;
+        overflow: hidden;
+        height: 100%;
+        position: relative;
+        top: 0;
+        bottom: 0;
+
+        h1 {
+            width: 18px;
+            font-size: 20px;
+            word-wrap: break-word;
+            color: rgba($white, 0.5);
+            margin: 80px auto 0;
+            text-align: center;
+            display: none;
+        }
+    }
+    .intuitive-white {
+        background-color: $white;
+        //right: $bandwidth * 0;
+        h1 {
+            color: rgba($black, 0.5);
+        }
+    }
+    .compassionate-black {
+        background-color: $black;
+        //right: $bandwidth * 1;
+    }
+    .charismatic-red {
+        background-color: $red;
+        //right: $bandwidth * 2;
+    }
+    .intellectual-purple {
+        background-color: $purple;
+        //right: $bandwidth * 3;
+    }
+    .spiritual-blue {
+        background-color: $blue;
+        //right: $bandwidth * 4;
+    }
+    .inspirational-green {
+        background-color: $green;
+        //right: $bandwidth * 5;
+    }
+}
+
+/*
+ * Header stuff
+-----------------------------------------------------
+*/
+.logo-toggle {
+    cursor: pointer;
+    color: $purple;
+
+    &:hover {
+        color: #B5C552;
+    }
+}
+
+/*hero container*/
+.hero {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    z-index: -2;
+
+    .hero-inner {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 300px;
+
+        .hero-video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            object-fit: cover;
+        }
+    }
+}
+
+/* sp-cta */
+.sp-cta {
+    background-color: rgba($green, 0.4);
+    border-top: 2px solid $green;
+
+    padding: 16px 0;
+    font-size: 1rem;
+
+    .cta-text {
+        font-size: 1.5rem;
+        color: $white;
+    }
+
+    .button-wrapper {
+        text-align: center;
+        .btn.btn-default {
+            background-color: $green;
+            border-color: $green;
+            &:hover {
+                background-color: $blue;
+                border-color: $blue;
+            }
+        }
+    }
+}
+
+/*
+ * Testimonials
+ */
+
+.testimonials-wrapper {
+    background-color: rgba($green, 0.4);
+    border-top: 2px solid $green;
+    border-bottom: 2px solid $green;
+    padding: 48px 0 32px;
+    #testimonials {
+        color: $white;
+
+        .tblock-1 {
+            padding-right: 32px;
+        }
+
+        .tblock-2 {
+            padding-left: 32px;
+        }
+
+        .testimonial-widget {
+            background-color: $blue;
+            margin: 16px;
+            padding: 16px;
+            border-radius: 5px;
+
+            .testimonial-person {
+                text-align: right;
+                padding-right: 16px;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.book-wrapper {
+    background-color: rgba($blue, 0.4);
+    border-top: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+    padding: 16px 0 32px;
+
+    .row {
+        padding: 48px 0 32px;
+
+        .book-cover {
+            text-align: center;
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        .book-info {
+            color: $white;
+        }
+    }
+}
+
+/*
+ * Main Content stuff
+-----------------------------------------------------
+*/
+
+.is-sp-home {
+    .entry-content {
+        margin-top: 0;
+    }
+}
+
+.home-widget-area-left {
+    .home-widget {
+        .widget_text {
+            padding-bottom: 16px;
+
+            h3 {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+.home-widget-area-right {
+    .home-widget {
+        .widget_text {
+
+            h3 {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+.widget_nav_menu {
+    #menu-booking-menu {
+
+        li {
+            a {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+
+    }
+}
+
+#content {
+    padding-top: 32px;
+}
+
+blockquote {
+    border-left: 5px solid $red;
+    color: $red;
+}
+
+.well,
+.post-inner-content {
+    padding: 0 8px 32px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.well,
+.post-inner-content {
+    border: none;
+    background-color: $white;
+}
+
+.post-inner-content hr {
+    border-top-color: $green;
+}
+
+body.archive .post-inner-content,
+body.blog .post-inner-content,
+.post-inner-content:first-child {
+    border: none;
+}
+
+.main-content-area {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.service-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    padding-top: 16px;
+
+    .service {
+        width: 45%;
+        text-align: center;
+
+        .sub-button {
+            padding-top: 8px;
+            text-align: left;
+        }
+        .button {
+            background-color: $green;
+            display: inline-block;
+
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+.buttonWrapper {
+    margin-bottom: 12px;
+    .button {
+        background-color: $green;
+        display: inline-block;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+
+    .purple-button {
+        background-color: $purple;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .blue-button {
+        background-color: $blue;
+        &:hover {
+            background-color: $green;
+        }
+    }
+}
+
+.button {
+    background-color: $green;
+    display: inline-block;
+
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.purple-button {
+    background-color: $purple;
+}
+
+.blue-button {
+    background-color: $blue;
+    &:hover {
+        background-color: $green;
+    }
+}
+
+.book-callout,
+.extra-callout {
+    float: right;
+    width: 200px;
+    background-color: $purple;
+    padding: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: $white;
+    clear: both;
+
+    h3 {
+        color: $white;
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    a {
+        color: $white;
+        &:hover {
+            color: $green;
+        }
+    }
+
+    .button,
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.book-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .book-section {
+        padding: 16px;
+    }
+}
+
+.round-the-corners {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+body {
+
+    &.is-in-dir-charismatic {
+        #masthead {
+            border-bottom: 2px solid $red;
+        }
+
+        .sp-cta {
+            background-color: rgba($red, 0.4);
+            border-top: 2px solid $red;
+
+            .button-wrapper {
+                .btn.btn-default {
+                    background-color: $red;
+                    border-color: $red;
+                    &:hover {
+                        background-color: $purple;
+                        border-color: $purple;
+                    }
+                }
+            }
+        }
+        #solepath-rainbow {
+            .charismatic-red {
+                width: 50px;
+                h1 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.is-in-dir-inspirational {
+        #masthead {
+            border-bottom: 2px solid $green;
+        }
+        .sp-cta {
+            background-color: rgba($green, 0.4);
+            border-top: 2px solid $green;
+
+            .button-wrapper {
+                .btn.btn-default {
+                    background-color: $green;
+                    border-color: $green;
+                    &:hover {
+                        background-color: $blue;
+                        border-color: $blue;
+                    }
+                }
+            }
+        }
+        #solepath-rainbow {
+            .inspirational-green {
+                width: 50px;
+                h1 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.is-in-dir-intellectual {
+        #masthead {
+            border-bottom: 2px solid $purple;
+        }
+        .sp-cta {
+            background-color: rgba($purple, 0.4);
+            border-top: 2px solid $purple;
+
+            .button-wrapper {
+                .btn.btn-default {
+                    background-color: $purple;
+                    border-color: $purple;
+                    &:hover {
+                        background-color: $blue;
+                        border-color: $blue;
+                    }
+                }
+            }
+        }
+        #solepath-rainbow {
+            .intellectual-purple {
+                width: 50px;
+                h1 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.is-in-dir-intuitive {
+        #masthead {
+            border-bottom: 2px solid rgba($black, 0.3);
+        }
+        .sp-cta {
+            background-color: rgba($white, 0.4);
+            border-top: 2px solid rgba($black, 0.3);
+
+            .cta-text {
+                font-size: 1.5rem;
+                color: $red;
+            }
+
+            .button-wrapper {
+                .btn.btn-default {
+                    background-color: rgba($black, 0.4);
+                    border-color: rgba($black, 0.6);
+                    color: $red;
+                    &:hover {
+                        background-color: $red;
+                        border-color: $red;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        #solepath-rainbow {
+            .intuitive-white {
+                width: 50px;
+                h1 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.is-in-dir-spiritual {
+        #masthead {
+            border-bottom: 2px solid $blue;
+        }
+        .sp-cta {
+            background-color: rgba($blue, 0.4);
+            border-top: 2px solid $blue;
+
+            .button-wrapper {
+                .btn.btn-default {
+                    background-color: $blue;
+                    border-color: $blue;
+                    &:hover {
+                        background-color: $green;
+                        border-color: $green;
+                    }
+                }
+            }
+        }
+        #solepath-rainbow {
+            .spiritual-blue {
+                width: 50px;
+                h1 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.is-in-dir-compassionate {
+        #masthead {
+            border-bottom: 2px solid $black;
+        }
+        .sp-cta {
+            background-color: rgba($black, 0.4);
+            border-top: 2px solid $black;
+
+            .button-wrapper {
+                .btn.btn-default {
+                    background-color: $black;
+                    border-color: $black;
+                    &:hover {
+                        background-color: $red;
+                        border-color: $red;
+                    }
+                }
+            }
+        }
+
+        #solepath-rainbow {
+            .compassionate-black {
+                width: 50px;
+                h1 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.is-in-dir-seth {
+    }
+
+    &.is-in-dir-root,
+    &.is-in-dir-solepath {
+    }
+
+    &.is-in-dir-animal-solepath {
+    }
+
+    &.is-in-dir-solefaces {
+    }
+
+    &.is-in-dir-solenumbers {
+    }
+
+    &.is-in-dir-shop,
+    &.is-in-dir-solepantry,
+    &.is-in-dir-cart,
+    &.is-in-dir-checkout,
+    &.is-in-dir-product,
+    &.is-in-dir-product-category {
+    }
+}

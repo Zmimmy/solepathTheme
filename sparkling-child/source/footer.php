@@ -36,6 +36,11 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script>
+    window.fcWidget.init({
+        token: "f3b89e61-3dd5-4214-b985-5dcded80a5fb",
+        host: "https://wchat.freshchat.com"
+    });
+</script>
 </body>
 </html>

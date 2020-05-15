@@ -1,0 +1,504 @@
+/*
+Theme Name: SolePath Theme 2018
+Template: sparkling
+Author: Colorlib and Eric Pattison
+Author URI: http://colorlib.com/
+Description: Adapted sparkling theme for SolePath home page
+Version: 1.0
+Updated: June 27, 2018
+
+*/
+/*
+Contents:
+--------
+1. SCSS color variables
+2. Imports
+3. Navbar and body colors
+4: Navbar fonts and sized
+5. Sidebar styling
+6. Breadcrumbs
+7. Content footer navigation
+8. Footer
+9. Misc Stuff
+
+1. Color Variables for the theme
+----------------------------------------------------
+
+green #29797e
+purple #644870
+red #87123c
+blue #285f73
+
+white: #ECEEEA
+black: #2B2D2E
+
+
+*/
+body {
+  background-color: #ECEEEA;
+  color: #2B2D2E; }
+  body .btn.btn-default, body .woocommerce #respond input#submit, body .woocommerce a.button, body .woocommerce button.button, body .woocommerce input.button, body a.more-link {
+    color: #ECEEEA;
+    background-color: #285F73;
+    border-color: #285F73;
+    text-transform: uppercase;
+    font-size: 1.25rem; }
+  body .btn.btn-default:hover, body .label-default[href]:hover, body .label-default[href]:focus, body .btn-default:hover, body .btn-default:focus, body .btn-default:active, body .btn-default.active, body #image-navigation .nav-previous a:hover, body #image-navigation .nav-next a:hover, body .woocommerce #respond input#submit:hover, body .woocommerce #respond input#submit.alt:hover, body .woocommerce a.button:hover, body .woocommerce button.button:hover, body .woocommerce input.button:hover, body .woocommerce a.button.alt:hover, body .woocommerce button.button.alt:hover, body .woocommerce input.button.alt:hover, body a.more-link:hover {
+    background-color: #29797E;
+    border-color: #29797E;
+    color: #ECEEEA; }
+
+#infinite-handle span, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title,
+.dropdown-menu, #secondary .widget, #secondary .widget > h3 {
+  color: #2B2D2E; }
+
+body a,
+#secondary .widget .post-content a,
+#secondary .widget a {
+  color: #644870; }
+  body a:hover,
+  #secondary .widget .post-content a:hover,
+  #secondary .widget a:hover {
+    color: #285F73; }
+
+#masthead {
+  position: relative;
+  border-bottom: 2px solid #29797E; }
+  #masthead .navbar-default {
+    background-color: #285F73;
+    color: #ECEEEA;
+    min-height: 40px; }
+    #masthead .navbar-default .site-navigation-inner #menu-header-menu li {
+      padding: 0 16px;
+      color: #ECEEEA; }
+      #masthead .navbar-default .site-navigation-inner #menu-header-menu li:hover, #masthead .navbar-default .site-navigation-inner #menu-header-menu li:focus {
+        background-color: #29797E;
+        color: #ECEEEA; }
+      #masthead .navbar-default .site-navigation-inner #menu-header-menu li li:hover, #masthead .navbar-default .site-navigation-inner #menu-header-menu li li:focus {
+        background-color: #29797E; }
+    #masthead .navbar-default .navbar-nav > .active > a {
+      color: #ECEEEA;
+      background-color: transparent; }
+    #masthead .navbar-default .navbar-nav .current-menu-item {
+      background-color: #29797E; }
+    #masthead .navbar-default .navbar-nav .dropdown-menu > li > a {
+      line-height: 40px; }
+  #masthead #logo {
+    max-width: 150px;
+    margin-top: 32px;
+    z-index: 3;
+    position: relative; }
+    #masthead #logo a {
+      display: block; }
+
+.navbar-default .navbar-nav > .active > .caret,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ECEEEA;
+  background-color: transparent; }
+
+/*
+10: Social Icons
+-----------------------------------------------------
+*/
+#menu-social li a[href*="etsy.com"] .fa:before {
+  content: "\f2d7"; }
+#menu-social li a[href*="medium.com"] .fa:before {
+  content: "\f23a"; }
+#menu-social li a[href*="meetups-join"] .fa:before {
+  content: "\f2e0"; }
+
+#footer-area {
+  background-color: #285F73;
+  color: #ECEEEA; }
+  #footer-area a {
+    color: #ECEEEA;
+    text-decoration: underline; }
+  #footer-area #colophon {
+    background-color: #285F73;
+    color: #ECEEEA;
+    border-top: none; }
+  #footer-area .footer-rainbow {
+    position: absolute;
+    top: -40px;
+    left: -48px;
+    width: 100%;
+    height: 89%;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 0 0 8px #2B2D2E, 0 0 0 16px #87123C, 0 0 0 24px #644870, 0 0 0 32px #285F73, 0 0 0 40px #ECEEEA, 0 0 0 48px #29797E; }
+  #footer-area .footer-area-inner-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    overflow: hidden; }
+
+/*
+11: Solepath Rainbow
+-----------------------------------------------------
+*/
+#solepath-rainbow {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0; }
+  #solepath-rainbow .color-band {
+    width: 8px;
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0; }
+    #solepath-rainbow .color-band h1 {
+      width: 18px;
+      font-size: 20px;
+      word-wrap: break-word;
+      color: rgba(236, 238, 234, 0.5);
+      margin: 80px auto 0;
+      text-align: center;
+      display: none; }
+  #solepath-rainbow .intuitive-white {
+    background-color: #ECEEEA; }
+    #solepath-rainbow .intuitive-white h1 {
+      color: rgba(43, 45, 46, 0.5); }
+  #solepath-rainbow .compassionate-black {
+    background-color: #2B2D2E; }
+  #solepath-rainbow .charismatic-red {
+    background-color: #87123C; }
+  #solepath-rainbow .intellectual-purple {
+    background-color: #644870; }
+  #solepath-rainbow .spiritual-blue {
+    background-color: #285F73; }
+  #solepath-rainbow .inspirational-green {
+    background-color: #29797E; }
+
+/*
+ * Header stuff
+-----------------------------------------------------
+*/
+.logo-toggle {
+  cursor: pointer;
+  color: #644870; }
+  .logo-toggle:hover {
+    color: #B5C552; }
+
+/*hero container*/
+.hero {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  z-index: -2; }
+  .hero .hero-inner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px; }
+    .hero .hero-inner .hero-video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      object-fit: cover; }
+
+/* sp-cta */
+.sp-cta {
+  background-color: rgba(41, 121, 126, 0.4);
+  border-top: 2px solid #29797E;
+  padding: 16px 0;
+  font-size: 1rem; }
+  .sp-cta .cta-text {
+    font-size: 1.5rem;
+    color: #ECEEEA; }
+  .sp-cta .button-wrapper {
+    text-align: center; }
+    .sp-cta .button-wrapper .btn.btn-default {
+      background-color: #29797E;
+      border-color: #29797E; }
+      .sp-cta .button-wrapper .btn.btn-default:hover {
+        background-color: #285F73;
+        border-color: #285F73; }
+
+/*
+ * Testimonials
+ */
+.testimonials-wrapper {
+  background-color: rgba(41, 121, 126, 0.4);
+  border-top: 2px solid #29797E;
+  border-bottom: 2px solid #29797E;
+  padding: 48px 0 32px; }
+  .testimonials-wrapper #testimonials {
+    color: #ECEEEA; }
+    .testimonials-wrapper #testimonials .tblock-1 {
+      padding-right: 32px; }
+    .testimonials-wrapper #testimonials .tblock-2 {
+      padding-left: 32px; }
+    .testimonials-wrapper #testimonials .testimonial-widget {
+      background-color: #285F73;
+      margin: 16px;
+      padding: 16px;
+      border-radius: 5px; }
+      .testimonials-wrapper #testimonials .testimonial-widget .testimonial-person {
+        text-align: right;
+        padding-right: 16px;
+        font-style: italic; }
+
+.book-wrapper {
+  background-color: rgba(40, 95, 115, 0.4);
+  border-top: 2px solid #285F73;
+  border-bottom: 2px solid #285F73;
+  padding: 16px 0 32px; }
+  .book-wrapper .row {
+    padding: 48px 0 32px; }
+    .book-wrapper .row .book-cover {
+      text-align: center; }
+      .book-wrapper .row .book-cover img {
+        margin: 0 auto; }
+    .book-wrapper .row .book-info {
+      color: #ECEEEA; }
+
+/*
+ * Main Content stuff
+-----------------------------------------------------
+*/
+.is-sp-home .entry-content {
+  margin-top: 0; }
+
+.home-widget-area-left .home-widget .widget_text {
+  padding-bottom: 16px; }
+  .home-widget-area-left .home-widget .widget_text h3 {
+    margin-bottom: 12px; }
+
+.home-widget-area-right .home-widget .widget_text h3 {
+  margin-bottom: 12px; }
+
+.widget_nav_menu #menu-booking-menu li a {
+  border-bottom: none;
+  padding-bottom: 0; }
+
+#content {
+  padding-top: 32px; }
+
+blockquote {
+  border-left: 5px solid #87123C;
+  color: #87123C; }
+
+.well,
+.post-inner-content {
+  padding: 0 8px 32px;
+  border: none;
+  margin-bottom: 40px; }
+
+.well,
+.post-inner-content {
+  border: none;
+  background-color: #ECEEEA; }
+
+.post-inner-content hr {
+  border-top-color: #29797E; }
+
+body.archive .post-inner-content,
+body.blog .post-inner-content,
+.post-inner-content:first-child {
+  border: none; }
+
+.main-content-area {
+  margin-top: 0px;
+  margin-bottom: 40px; }
+
+.service-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  padding-top: 16px; }
+  .service-wrapper .service {
+    width: 45%;
+    text-align: center; }
+    .service-wrapper .service .sub-button {
+      padding-top: 8px;
+      text-align: left; }
+    .service-wrapper .service .button {
+      background-color: #29797E;
+      display: inline-block; }
+      .service-wrapper .service .button:hover {
+        background-color: #285F73; }
+
+.buttonWrapper {
+  margin-bottom: 12px; }
+  .buttonWrapper .button {
+    background-color: #29797E;
+    display: inline-block; }
+    .buttonWrapper .button:hover {
+      background-color: #285F73; }
+  .buttonWrapper .purple-button {
+    background-color: #644870; }
+    .buttonWrapper .purple-button a {
+      color: #fff; }
+  .buttonWrapper .blue-button {
+    background-color: #285F73; }
+    .buttonWrapper .blue-button:hover {
+      background-color: #29797E; }
+
+.button {
+  background-color: #29797E;
+  display: inline-block; }
+  .button:hover {
+    background-color: #285F73; }
+
+.purple-button {
+  background-color: #644870; }
+
+.blue-button {
+  background-color: #285F73; }
+  .blue-button:hover {
+    background-color: #29797E; }
+
+.book-callout,
+.extra-callout {
+  float: right;
+  width: 200px;
+  background-color: #644870;
+  padding: 16px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #ECEEEA;
+  clear: both; }
+  .book-callout h3,
+  .extra-callout h3 {
+    color: #ECEEEA;
+    margin-top: 0;
+    font-size: 1.5rem; }
+  .book-callout a,
+  .extra-callout a {
+    color: #ECEEEA; }
+    .book-callout a:hover,
+    .extra-callout a:hover {
+      color: #29797E; }
+  .book-callout .button,
+  .book-callout img,
+  .extra-callout .button,
+  .extra-callout img {
+    display: block;
+    margin: 0 auto; }
+
+.book-section-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .book-section-wrapper .book-section {
+    padding: 16px; }
+
+.round-the-corners {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin-right: 15px; }
+
+body.is-in-dir-charismatic #masthead {
+  border-bottom: 2px solid #87123C; }
+body.is-in-dir-charismatic .sp-cta {
+  background-color: rgba(135, 18, 60, 0.4);
+  border-top: 2px solid #87123C; }
+  body.is-in-dir-charismatic .sp-cta .button-wrapper .btn.btn-default {
+    background-color: #87123C;
+    border-color: #87123C; }
+    body.is-in-dir-charismatic .sp-cta .button-wrapper .btn.btn-default:hover {
+      background-color: #644870;
+      border-color: #644870; }
+body.is-in-dir-charismatic #solepath-rainbow .charismatic-red {
+  width: 50px; }
+  body.is-in-dir-charismatic #solepath-rainbow .charismatic-red h1 {
+    display: block; }
+body.is-in-dir-inspirational #masthead {
+  border-bottom: 2px solid #29797E; }
+body.is-in-dir-inspirational .sp-cta {
+  background-color: rgba(41, 121, 126, 0.4);
+  border-top: 2px solid #29797E; }
+  body.is-in-dir-inspirational .sp-cta .button-wrapper .btn.btn-default {
+    background-color: #29797E;
+    border-color: #29797E; }
+    body.is-in-dir-inspirational .sp-cta .button-wrapper .btn.btn-default:hover {
+      background-color: #285F73;
+      border-color: #285F73; }
+body.is-in-dir-inspirational #solepath-rainbow .inspirational-green {
+  width: 50px; }
+  body.is-in-dir-inspirational #solepath-rainbow .inspirational-green h1 {
+    display: block; }
+body.is-in-dir-intellectual #masthead {
+  border-bottom: 2px solid #644870; }
+body.is-in-dir-intellectual .sp-cta {
+  background-color: rgba(100, 72, 112, 0.4);
+  border-top: 2px solid #644870; }
+  body.is-in-dir-intellectual .sp-cta .button-wrapper .btn.btn-default {
+    background-color: #644870;
+    border-color: #644870; }
+    body.is-in-dir-intellectual .sp-cta .button-wrapper .btn.btn-default:hover {
+      background-color: #285F73;
+      border-color: #285F73; }
+body.is-in-dir-intellectual #solepath-rainbow .intellectual-purple {
+  width: 50px; }
+  body.is-in-dir-intellectual #solepath-rainbow .intellectual-purple h1 {
+    display: block; }
+body.is-in-dir-intuitive #masthead {
+  border-bottom: 2px solid rgba(43, 45, 46, 0.3); }
+body.is-in-dir-intuitive .sp-cta {
+  background-color: rgba(236, 238, 234, 0.4);
+  border-top: 2px solid rgba(43, 45, 46, 0.3); }
+  body.is-in-dir-intuitive .sp-cta .cta-text {
+    font-size: 1.5rem;
+    color: #87123C; }
+  body.is-in-dir-intuitive .sp-cta .button-wrapper .btn.btn-default {
+    background-color: rgba(43, 45, 46, 0.4);
+    border-color: rgba(43, 45, 46, 0.6);
+    color: #87123C; }
+    body.is-in-dir-intuitive .sp-cta .button-wrapper .btn.btn-default:hover {
+      background-color: #87123C;
+      border-color: #87123C;
+      color: #ECEEEA; }
+body.is-in-dir-intuitive #solepath-rainbow .intuitive-white {
+  width: 50px; }
+  body.is-in-dir-intuitive #solepath-rainbow .intuitive-white h1 {
+    display: block; }
+body.is-in-dir-spiritual #masthead {
+  border-bottom: 2px solid #285F73; }
+body.is-in-dir-spiritual .sp-cta {
+  background-color: rgba(40, 95, 115, 0.4);
+  border-top: 2px solid #285F73; }
+  body.is-in-dir-spiritual .sp-cta .button-wrapper .btn.btn-default {
+    background-color: #285F73;
+    border-color: #285F73; }
+    body.is-in-dir-spiritual .sp-cta .button-wrapper .btn.btn-default:hover {
+      background-color: #29797E;
+      border-color: #29797E; }
+body.is-in-dir-spiritual #solepath-rainbow .spiritual-blue {
+  width: 50px; }
+  body.is-in-dir-spiritual #solepath-rainbow .spiritual-blue h1 {
+    display: block; }
+body.is-in-dir-compassionate #masthead {
+  border-bottom: 2px solid #2B2D2E; }
+body.is-in-dir-compassionate .sp-cta {
+  background-color: rgba(43, 45, 46, 0.4);
+  border-top: 2px solid #2B2D2E; }
+  body.is-in-dir-compassionate .sp-cta .button-wrapper .btn.btn-default {
+    background-color: #2B2D2E;
+    border-color: #2B2D2E; }
+    body.is-in-dir-compassionate .sp-cta .button-wrapper .btn.btn-default:hover {
+      background-color: #87123C;
+      border-color: #87123C; }
+body.is-in-dir-compassionate #solepath-rainbow .compassionate-black {
+  width: 50px; }
+  body.is-in-dir-compassionate #solepath-rainbow .compassionate-black h1 {
+    display: block; }
+
+/*# sourceMappingURL=style.css.map */

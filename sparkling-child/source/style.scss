@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title,
 	color: $purple
 }
 
+
 // Nav bar active and hover colors
 a:hover, a:active, #secondary .widget .post-content a:hover,
 .woocommerce nav.woocommerce-pagination ul li a:focus,
@@ -89,23 +90,61 @@ a:hover, a:active, #secondary .widget .post-content a:hover,
 	background-color: $purple;
 }
 
+.navbar.navbar-courses,
+.navbar-courses .navbar-nav .open .dropdown-menu > li > a {
+	background-color: #1F7199;
+}
+
+.navbar.navbar-courses {
+	.navbar-nav {
+		.dropdown-menu {
+			background-color: #1F7199;
+		}
+		&>li {
+			&>a {
+				color: $winter;
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+	/* course menus */
+	.navbar-inline {
+		display: inline-block !important;
+		float: right;
+	}
+
+}
+
 @media (max-width: 767px) {
 	.navbar-default .navbar-nav .open .dropdown-menu>.active>a,
 	.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
-	.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+	.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
+	.navbar-courses .navbar-nav .open .dropdown-menu>.active>a,
+	.navbar-courses .navbar-nav .open .dropdown-menu>.active>a:focus,
+	.navbar-courses .navbar-nav .open .dropdown-menu>.active>a:hover {
 		background: $green;
 		color: $winter;
 	}
 }
 
+.navbar-default .navbar-nav .dropdown-menu > li:hover,
+.navbar-default .navbar-nav .dropdown-menu > li:focus-within,
+.navbar-courses .navbar-nav .dropdown-menu > li:hover,
+.navbar-courses .navbar-nav .dropdown-menu > li:focus-within,
+.dropdown-menu > .active,
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus,
-.navbar-default .navbar-nav .open .dropdown-menu > li.active > a {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li.active > a,
+.navbar-courses .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-courses .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-courses .navbar-nav .open .dropdown-menu > li.active > a {
 	background-color: $green;
 	color: $winter;
 }
@@ -125,6 +164,23 @@ blockquote {
 .post-inner-content  {
 	@include round-corners(5px);
 	background-color: rgba(255,255,255,0.9);
+}
+
+// main stuff
+#main {
+	.post-inner-content {
+		padding: 50px 25px 20px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	.single-featured {
+		border: 1px solid #5C588A;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
 }
 
 body.archive .post-inner-content,

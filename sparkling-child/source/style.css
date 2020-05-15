@@ -1,0 +1,292 @@
+/*
+Theme Name: SP Membership Theme 2.0
+Template: sparkling
+Author: Colorlib and Eric Pattison
+Author URI: http://colorlib.com/
+Description: Adapted sparkling theme for SP Membership
+Version: 1.0
+Updated: Dec 8, 2016
+
+*/
+/*
+Contents:
+--------
+1. SCSS color variables
+2. Imports
+3. Navbar and body colors
+4: Navbar fonts and sized
+5. Sidebar styling
+6. Breadcrumbs
+7. Content footer navigation
+8. Footer
+9. Misc Stuff
+
+1. Color Variables for the theme
+----------------------------------------------------
+*/
+/* 2 Imports */
+/* 3. Navbar and Body Colors
+----------------------------------------------------
+*/
+body,
+#secondary .widget {
+  color: #6B6B6B; }
+
+a, #infinite-handle span, #secondary .widget .post-content a,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title,
+.dropdown-menu,
+#secondary .widget,
+#secondary .widget a,
+#secondary .widget > h3 {
+  color: #37074d; }
+
+a:hover, a:active, #secondary .widget .post-content a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+#secondary .widget a:hover,
+#secondary .widget a:focus {
+  color: #B5C552; }
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+.dropdown-menu > li > a,
+.navbar-default .navbar-nav .current-menu-ancestor a.dropdown-toggle,
+#footer-area, .site-info,
+.navbar > .container .navbar-brand {
+  color: #FAFAFB; }
+
+.navbar.navbar-default,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+#colophon,
+#footer-area {
+  background-color: #37074d; }
+
+.navbar.navbar-courses,
+.navbar-courses .navbar-nav .open .dropdown-menu > li > a {
+  background-color: #1F7199; }
+
+.navbar.navbar-courses {
+  /* course menus */ }
+  .navbar.navbar-courses .navbar-nav .dropdown-menu {
+    background-color: #1F7199; }
+  .navbar.navbar-courses .navbar-nav > li > a {
+    color: #FAFAFB; }
+    .navbar.navbar-courses .navbar-nav > li > a:hover {
+      background-color: transparent; }
+  .navbar.navbar-courses .navbar-inline {
+    display: inline-block !important;
+    float: right; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-courses .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-courses .navbar-nav .open .dropdown-menu > .active > a:focus,
+  .navbar-courses .navbar-nav .open .dropdown-menu > .active > a:hover {
+    background: #B5C552;
+    color: #FAFAFB; } }
+.navbar-default .navbar-nav .dropdown-menu > li:hover,
+.navbar-default .navbar-nav .dropdown-menu > li:focus-within,
+.navbar-courses .navbar-nav .dropdown-menu > li:hover,
+.navbar-courses .navbar-nav .dropdown-menu > li:focus-within,
+.dropdown-menu > .active,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li.active > a,
+.navbar-courses .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-courses .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-courses .navbar-nav .open .dropdown-menu > li.active > a {
+  background-color: #B5C552;
+  color: #FAFAFB; }
+
+blockquote {
+  border-left: 5px solid #BED8FF; }
+
+.well,
+.post-inner-content {
+  padding: 20px 25px;
+  border: 1px solid #5C588A;
+  margin-bottom: 40px; }
+
+.well,
+.post-inner-content {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+#main .post-inner-content {
+  padding: 50px 25px 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+#main .single-featured {
+  border: 1px solid #5C588A;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+body.archive .post-inner-content,
+body.blog .post-inner-content,
+.post-inner-content:first-child {
+  border-top: 1px solid #5C588A; }
+
+/*
+4: Navbar fonts and sized
+-----------------------------------------------------
+*/
+.navbar-default .navbar-nav > li > a {
+  line-height: 18px;
+  font-size: 14px; }
+
+.navbar > .container .navbar-brand {
+  margin: 3px 0; }
+
+/*
+5: Side bar styling
+-----------------------------------------------------
+*/
+.widget ul li {
+  border: none;
+  padding-bottom: 0; }
+
+#menu-my-membership-nav > .menu-item {
+  border-top: 1px dotted #37074d;
+  padding-top: 10px; }
+
+#menu-my-membership-nav > .menu-item:last-child {
+  border-bottom: 1px dotted #37074d; }
+
+#secondary img.sidebar-logo {
+  position: absolute;
+  top: -75px;
+  right: -45px;
+  z-index: 30; }
+
+/* logo on primary content-area resizing for mobile */
+#primary img.logo {
+  position: absolute;
+  top: -62px;
+  left: -70px;
+  z-index: 30; }
+
+@media (max-width: 1295px) {
+  #primary img.logo {
+    top: -33px;
+    left: -32px;
+    width: 16%; } }
+@media (max-width: 1200px) {
+  #primary img.logo {
+    width: 19%; } }
+@media (max-width: 992px) {
+  #primary img.logo {
+    top: -28px;
+    left: -25px;
+    width: 14%; } }
+@media (max-width: 800px) {
+  #primary img.logo {
+    top: -68px;
+    left: 0px;
+    width: 105px; } }
+/* give the logo some space */
+.main-content-area {
+  margin-top: 70px; }
+
+.well {
+  position: relative;
+  z-index: 1; }
+
+.well::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  z-index: -1; }
+
+#secondary .widget .i-am-statement {
+  text-transform: none;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: lighter;
+  margin-right: 25px; }
+
+/*
+6: Breadcrumbs
+-----------------------------------------------------
+*/
+.progress {
+  margin-bottom: 2px;
+  height: 6px; }
+
+.progress-bar {
+  background-color: #37074d; }
+
+.my-sp-breadcrumb-link {
+  color: #37074d;
+  padding-right: 5px; }
+
+/*
+7: Content footer navigation
+-----------------------------------------------------
+*/
+.my-sp-arrow {
+  color: #37074d; }
+
+.whole-thinker-menu-list {
+  padding-left: 0;
+  list-style-type: circle; }
+
+/*
+8: Footer Styles
+-----------------------------------------------------
+*/
+#footer-area {
+  padding-bottom: 150px; }
+  #footer-area .nav > li > a {
+    padding-left: 0;
+    padding-right: 20px;
+    color: #FAFAFB; }
+  #footer-area .nav > li > a:hover,
+  #footer-area .nav > li > a:focus {
+    color: #B5C552; }
+  #footer-area .copyright {
+    padding-left: 170px; }
+
+/*
+9: Misc Stuff
+-----------------------------------------------------
+*/
+body.loading {
+  overflow: auto; }
+
+/*
+99: Test Stuff not for the live site
+-----------------------------------------------------
+*/
+.logo-toggle {
+  cursor: pointer;
+  color: #37074d; }
+
+.logo-toggle:hover {
+  color: #B5C552; }
+
+/*# sourceMappingURL=style.css.map */
